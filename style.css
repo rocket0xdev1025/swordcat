@@ -69,3 +69,4 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid #a7752f55;backgro
 .burger{display:block}.nav>.btn{margin-left:auto}.lore-grid,.stats,.steps,.toko{grid-template-columns:1fr 1fr}.lore-grid{grid-template-columns:1fr}.join .brazier{display:none}}
 @media(max-width:480px){.steps,.toko{grid-template-columns:1fr}.brand span{display:none}.btn{min-width:150px}.ring{width:160px;height:160px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}#fx{display:none}}
+html,body,a,button,.btn,.burger,#copy,label,input,textarea,select,summary{cursor:url(assets/cursor-sword.png) 2 2,auto}
