@@ -2,6 +2,7 @@
 const t=document.getElementById('track');let s='';for(let i=0;i<12;i++)s+='<span>$SWORDCAT</span><span>&#9670;</span><span>CAT WIF SWORD</span><span>&#9670;</span>';t.innerHTML=s+s;
 const b=document.getElementById('burger'),m=document.getElementById('menu');b.onclick=()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)};m.querySelectorAll('a').forEach(a=>a.onclick=()=>m.classList.remove('open'));
 const nav=document.querySelector('.nav'),bg=document.querySelector('.hero-bg');
+if(RM&&bg.pause){bg.removeAttribute('autoplay');bg.pause()}
 addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40);if(!RM)bg.style.transform=`translateY(${scrollY*.35}px)`},{passive:true});
 const cb=document.getElementById('copy');cb.onclick=async()=>{const v=document.getElementById('ca').textContent;const l=cb.querySelector('b');try{await navigator.clipboard.writeText(v);l.textContent='Copied'}catch(e){l.textContent='Copy failed'}setTimeout(()=>l.textContent='Copy',1500)};
 const count=el=>{const n=+el.dataset.count,suf=el.dataset.suffix||'';if(RM){el.textContent=n+suf;return}let st=null;const f=ts=>{st??=ts;const p=Math.min((ts-st)/1500,1);el.textContent=Math.round(n*p*(2-p))+suf;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)};
