@@ -1,69 +1,90 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>cat wif sword ($SWORDCAT) | Ethereum</title>
-<meta name="description" content="Just a small cat, a big sword and a bigger heart. $SWORDCAT is the Ethereum home of cat wif sword.">
-<link rel="canonical" href="https://www.catwifsword.fun/"><meta property="og:url" content="https://www.catwifsword.fun/"><meta property="og:title" content="cat wif sword ($SWORDCAT) on Ethereum"><meta property="og:description" content="Just a small cat, a big sword and a bigger heart. An ERC-20 on Ethereum."><meta property="og:image" content="/assets/banner.jpg"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/logo.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<svg width="0" height="0" style="position:absolute"><defs>
-<symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3L18.9 2zm-1.2 18h1.7L6.4 3.9H4.6L17.7 20z"/></symbol>
-<symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2l-11 6.9L2 11.3c-1-.3-1-1 .2-1.5L20.6 2.8c.9-.3 1.6.2 1.3 1.5z"/></symbol>
-<symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M9 9h11v11H9zM5 15H4V4h11v1"/></symbol>
-<symbol id="i-sword" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
-<symbol id="i-wallet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 7h18v13H3zM3 7l13-4v4M17 13h2"/></symbol>
-<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M8 9h8M8 15h8M10 7v10"/></symbol>
-<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" d="m16 16 5 5"/></symbol>
-<symbol id="i-swap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 8h14l-4-4M20 16H6l4 4"/></symbol>
-<symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z"/></symbol>
-<symbol id="i-fire" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 22c4 0 7-3 7-7 0-4-3-6-4-10-2 2-3 4-3 6-1-1-2-2-2-4-2 2-5 5-5 8 0 4 3 7 7 7z"/></symbol>
-<symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z"/></symbol>
-<symbol id="i-menu" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
-</defs></svg>
-<canvas id="sparks" aria-hidden="true"></canvas><canvas id="trail" aria-hidden="true"></canvas>
-<header class="nav"><a href="https://www.catwifsword.fun" class="brand"><img src="assets/logo.png" alt="" width="40" height="40">cat wif sword</a>
-<nav id="menu"><a href="#lore">Lore</a><a href="#world">World</a><a href="#buy">How to Buy</a><a href="#tokenomics">Tokenomics</a><a href="https://www.catwifsword.fun">Website</a>
-<a class="ico" href="https://x.com/cat_wif_sword" target="_blank" rel="noopener" aria-label="X"><svg><use href="#i-x"/></svg></a><a class="ico" href="https://t.me/cat_wif_sword" target="_blank" rel="noopener" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
-<a class="btn sm" href="https://app.uniswap.org/#/swap?chain=mainnet&inputCurrency=ETH" target="_blank" rel="noopener">Buy $SWORDCAT</a></nav>
-<button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button></header>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cat wif sword ($SWORDCAT) | Official Ethereum Meme Token</title>
+<meta name="description" content="A tiny cat, a giant sword, and an unbreakable heart. She faces chaos, slays the vamps, and never backs down.">
+<link rel="canonical" href="https://www.catwifsword.fun">
+<meta property="og:title" content="cat wif sword ($SWORDCAT)"><meta property="og:description" content="A tiny cat, a giant sword, and an unbreakable heart. Now on Ethereum.">
+<meta property="og:url" content="https://www.catwifsword.fun"><meta property="og:image" content="https://www.catwifsword.fun/assets/banner.jpg"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@cat_wif_sword">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<canvas id="fx"></canvas>
+<header class="nav"><a href="#top" class="brand"><img src="assets/crest-badge.png" alt="SC crest"><span>cat wif sword</span></a>
+<nav id="menu"><a href="#lore">Lore</a><a href="#saga">Saga</a><a href="#buy">How to Buy</a><a href="#tokenomics">Tokenomics</a><a href="#join">Join</a></nav>
+<a class="btn gold small" href="https://app.uniswap.org" target="_blank" rel="noopener">Buy</a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></header>
 
-<section class="hero" id="top"><div class="hero-bg" data-par="0.35"></div><div class="fog f1"></div><div class="fog f2"></div><div class="slash s1"></div><div class="slash s2"></div>
-<div class="hero-inner"><div class="medallion"><img src="assets/logo.png" alt="cat wif sword logo"></div>
-<p class="kicker">$SWORDCAT on Ethereum</p><h1>cat wif sword</h1><p class="tag">Just a small cat, a big sword and a bigger heart.</p>
-<div class="ca"><span>ERC-20 · Ethereum · CA: <b id="ca">Coming soon</b></span><button id="copy" aria-label="Copy contract address"><svg><use href="#i-copy"/></svg><span>Copy</span></button></div>
-<div class="cta"><a class="btn" href="https://app.uniswap.org/#/swap?chain=mainnet&inputCurrency=ETH" target="_blank" rel="noopener"><svg><use href="#i-sword"/></svg>Buy on Uniswap</a><a class="btn ghost" href="https://x.com/cat_wif_sword" target="_blank" rel="noopener"><svg><use href="#i-x"/></svg>Follow</a><a class="btn ghost" href="https://t.me/cat_wif_sword" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a></div></div>
-<a href="#lore" class="scroll" aria-label="Scroll"><span></span></a></section>
+<section class="hero" id="top">
+<div class="hero-bg" data-parallax="0.35" style="background-image:url(assets/banner.jpg)"></div><div class="hero-shade"></div>
+<img class="warbanner l" src="assets/war-banner.png" alt=""><img class="warbanner r" src="assets/war-banner.png" alt="">
+<div class="slash s1"></div><div class="slash s2"></div>
+<div class="hero-in">
+<div class="ring reveal"><img class="ringf" src="assets/ring-frame.png" alt=""><img class="logo" src="assets/logo.png" alt="cat wif sword logo"></div>
+<p class="eyebrow reveal"><svg class="eth" viewBox="0 0 24 38"><path d="M12 0 0 19.5 12 26.6 24 19.5z" fill="currentColor"/><path d="M12 28.9 0 21.8 12 38 24 21.8z" fill="currentColor" opacity=".6"/></svg> Forged on Ethereum</p>
+<h1 class="reveal">cat wif sword</h1>
+<div class="sym reveal">$SWORDCAT</div>
+<p class="tag reveal">A tiny cat, a giant sword, and an unbreakable heart. She faces chaos, slays the vamps, and never backs down.</p>
+<div class="ca reveal"><span>CA:</span><code id="ca">Coming soon</code><button id="copy" aria-label="Copy contract address"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 16H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v1" fill="none" stroke="currentColor" stroke-width="2"/></svg><b>Copy</b></button></div>
+<div class="ctas reveal"><a class="btn gold" href="https://app.uniswap.org" target="_blank" rel="noopener">Buy on Uniswap</a><a class="btn dark" href="https://dexscreener.com/ethereum" target="_blank" rel="noopener">Chart</a><a class="btn dark" href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></div>
+<div class="socials reveal"><a href="https://x.com/cat_wif_sword" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.2 2h3.4l-7.4 8.5L23 22h-6.8l-5.3-7-6.1 7H1.4l7.9-9L1 2h7l4.8 6.4zm-1.2 18h1.9L7.1 3.9H5.1z"/></svg></a><a href="https://t.me/cat_wif_sword" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.7 19.5c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2l-11 6.9-4.7-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg></a></div>
+</div></section>
 
-<div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+<div class="ticker"><div class="track" id="track"></div></div>
 
-<section id="lore" class="lore"><p class="eyebrow">The Meme, The Chain</p><h2>The Lore</h2>
-<article class="chap"><span class="num">Chapter I &middot; The Fog</span><p>A tiny cat stepped onto Ethereum with a sword too big for her frame. One block, then another, until the timeline knew her name.</p></article>
-<article class="chap"><span class="num">Chapter II &middot; The Heart</span><p>People didn't just pass the image along. They felt her. Small, counted out, still standing. From Tokyo to Texas, São Paulo to Seoul, she became the mark for anyone the market wrote off too early.</p></article>
-<article class="chap war"><span class="num">Chapter III &middot; The Battle</span><p>Then the trenches opened. Noise, snipers, every candle a fight. She kept the sword up and stayed on the chain.</p></article>
-<article class="chap"><span class="num">Chapter IV &middot; The Stand</span><p>Today she stands where the story belongs: paw on the hilt, heart unbroken, contract on Ethereum. Not just a cat. A movement.</p></article>
-<article class="chap final"><p>Just a small cat, a big sword and a bigger heart.</p></article></section>
+<section id="lore" class="sec">
+<img class="divider" src="assets/divider-crest.png" alt="">
+<h2 class="reveal">The Legend</h2>
+<div class="lore-grid">
+<div class="framebox reveal tilt"><img src="assets/banner.jpg" alt="Kitten knight roaring in the colosseum"></div>
+<div class="panel reveal"><p>In the blood-red sands of the great arena, the crowd laughed when a kitten dragged a sword three times her size through the gate.</p><p>They stopped laughing. She faced the chaos, slew the vamps, and never backed down. Now her legend is etched on Ethereum, one block at a time.</p><p class="gold">No roadmap of empty promises. Just a tiny cat, a giant sword, and a community that refuses to fold.</p></div>
+</div>
+<div class="stats"><div class="stat panel reveal"><b data-count="0" data-suffix="%">0%</b><span>Tax</span></div><div class="stat panel reveal"><b data-count="100" data-suffix="%">0</b><span>LP Burned*</span></div><div class="stat panel reveal"><b data-count="1">0</b><span>Giant Sword</span></div><div class="stat panel reveal"><b data-count="9" data-suffix=" lives">0</b><span>Unbreakable</span></div></div>
+</section>
 
-<section id="world" class="world"><p class="eyebrow">Ethereum, from feed to feed</p><h2>The World Tour</h2>
-<div class="map"><svg class="route" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><path d="M60 200 Q 300 40 500 170 T 940 110" fill="none" stroke="url(#g)" stroke-width="3" stroke-dasharray="8 10"/><defs><linearGradient id="g"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ff9ec7"/></linearGradient></defs></svg>
-<div class="pin"><svg><use href="#i-pin"/></svg><b>Tokyo</b><small>35.68&deg; N</small></div><div class="pin"><svg><use href="#i-pin"/></svg><b>Texas</b><small>31.0&deg; N</small></div><div class="pin"><svg><use href="#i-pin"/></svg><b>São Paulo</b><small>23.55&deg; S</small></div><div class="pin"><svg><use href="#i-pin"/></svg><b>Seoul</b><small>37.57&deg; N</small></div></div></section>
+<section id="saga" class="sec saga">
+<img class="divider" src="assets/divider-crest.png" alt="">
+<h2 class="reveal">The Dragon Saga</h2>
+<p class="sub reveal">Witness the tiny knight stand her ground against a dragon of the storm.</p>
+<div class="theater reveal"><img class="brazier bl" src="assets/brazier.png" alt=""><img class="brazier br" src="assets/brazier.png" alt="">
+<div class="framebox video"><video id="vid" src="assets/kitten-vs-dragon.mp4" poster="assets/video-poster.jpg" muted loop playsinline autoplay preload="metadata"></video><button id="sound" class="btn dark small">Sound On</button></div></div>
+</section>
 
-<section class="stats"><div class="stat"><b class="count" data-to="1000000000">0</b><span>Total Supply</span></div><div class="stat"><b class="count" data-to="0" data-suf="%">0</b><span>Buy / Sell Tax</span></div><div class="stat"><b class="count" data-to="100" data-suf="%">0</b><span>LP Burned</span></div><div class="stat"><b>ETH</b><span>Ethereum Mainnet</span></div></section>
+<section id="buy" class="sec">
+<img class="divider" src="assets/divider-crest.png" alt="">
+<h2 class="reveal">How to Buy</h2>
+<div class="steps">
+<div class="card panel reveal tilt"><img src="assets/icon-wallet.png" alt=""><i>I</i><h3>Get a Wallet</h3><p>Install MetaMask or Rabby wallet from the official site. Guard your seed phrase like a sword.</p></div>
+<div class="card panel reveal tilt"><img src="assets/icon-coins.png" alt=""><i>II</i><h3>Buy ETH</h3><p>Buy ETH on an exchange or in-wallet and send it to your Ethereum wallet. Keep a little for gas.</p></div>
+<div class="card panel reveal tilt"><img src="assets/icon-search.png" alt=""><i>III</i><h3>Go to Uniswap</h3><p>Open app.uniswap.org, connect your wallet, and paste the official $SWORDCAT contract address.</p></div>
+<div class="card panel reveal tilt"><img src="assets/icon-swords.png" alt=""><i>IV</i><h3>Swap</h3><p>Swap ETH for $SWORDCAT. Welcome to the arena, knight.</p></div>
+</div>
+<div class="ctas center reveal"><a class="btn gold" href="https://app.uniswap.org" target="_blank" rel="noopener">Buy on Uniswap</a><a class="btn dark" href="https://dexscreener.com/ethereum" target="_blank" rel="noopener">Chart</a></div>
+</section>
 
-<section id="buy" class="buy"><p class="eyebrow">Four steps on Ethereum</p><h2>How to Buy</h2><div class="grid">
-<div class="card tilt"><svg><use href="#i-wallet"/></svg><span class="n">01</span><h3>Create a Wallet</h3><p>Install MetaMask, Rabby, or Coinbase Wallet. This is the account that will hold $SWORDCAT. Keep the recovery phrase offline.</p></div>
-<div class="card tilt"><svg><use href="#i-coin"/></svg><span class="n">02</span><h3>Get Some ETH</h3><p>Buy Ethereum and send it to that wallet on Ethereum mainnet. You swap ETH for $SWORDCAT, and a little extra ETH pays the gas.</p></div>
-<div class="card tilt"><svg><use href="#i-search"/></svg><span class="n">03</span><h3>Open Uniswap</h3><p>Connect the same wallet and stay on Ethereum. Paste the official CA when it is live, and match it to the address on this page before you swap.</p></div>
-<div class="card tilt"><svg><use href="#i-swap"/></svg><span class="n">04</span><h3>Swap and Sword Up</h3><p>Set your ETH amount, check the quote and slippage, then confirm in your wallet. When it clears, $SWORDCAT is yours.</p></div></div>
-<a class="btn big" href="https://app.uniswap.org/#/swap?chain=mainnet&inputCurrency=ETH" target="_blank" rel="noopener"><svg><use href="#i-sword"/></svg>Buy $SWORDCAT on Uniswap</a></section>
+<section id="tokenomics" class="sec">
+<img class="divider" src="assets/divider-crest.png" alt="">
+<h2 class="reveal">Tokenomics</h2>
+<div class="toko">
+<div class="tk panel reveal tilt"><img src="assets/star-plate.png" alt=""><h3>Supply</h3><b>TBA</b></div>
+<div class="tk panel reveal tilt"><img src="assets/star-compass.png" alt=""><h3>Tax</h3><b>0% / 0%</b></div>
+<div class="tk panel reveal tilt"><img src="assets/pillar-a.png" alt=""><h3>Liquidity</h3><b>LP Burned</b></div>
+<div class="tk panel reveal tilt"><img src="assets/pillar-b.png" alt=""><h3>Contract</h3><b>Renounced</b></div>
+</div>
+<p class="note">* Placeholder values, to be confirmed at launch. Always verify on Etherscan.</p>
+<img class="spear" src="assets/spear-line.png" alt="">
+</section>
 
-<section id="tokenomics" class="toke"><p class="eyebrow">Forged on Ethereum</p><h2>Tokenomics</h2><div class="grid">
-<div class="card tilt"><svg><use href="#i-coin"/></svg><h3>1,000,000,000</h3><p>Total supply</p></div>
-<div class="card tilt"><svg><use href="#i-shield"/></svg><h3>0% Tax</h3><p>No buy or sell tax</p></div>
-<div class="card tilt"><svg><use href="#i-heart"/></svg><h3>Fair Launch</h3><p>No presale. An ERC-20 on Ethereum.</p></div>
-<div class="card tilt"><svg><use href="#i-fire"/></svg><h3>LP Burned</h3><p>Liquidity burned at launch</p></div></div>
-<p class="note">Supply, tax, and liquidity are the Ethereum launch plan and will be confirmed when the contract is live. Always match the official CA.</p></section>
+<section id="join" class="sec join">
+<img class="brazier bl" src="assets/brazier.png" alt=""><img class="brazier br" src="assets/brazier.png" alt="">
+<h2 class="reveal">Join the Arena</h2>
+<p class="sub reveal">Rally with the knights of $SWORDCAT.</p>
+<div class="ctas center reveal"><a class="btn gold" href="https://x.com/cat_wif_sword" target="_blank" rel="noopener">Follow on X</a><a class="btn gold" href="https://t.me/cat_wif_sword" target="_blank" rel="noopener">Join Telegram</a></div>
+</section>
 
-<footer><img src="assets/logo.png" alt="" width="64" height="64"><p class="ftag">Just a small cat, a big sword and a bigger heart.</p>
-<div class="flinks"><a href="https://www.catwifsword.fun">catwifsword.fun</a><a href="https://x.com/cat_wif_sword" target="_blank" rel="noopener"><svg><use href="#i-x"/></svg>X</a><a href="https://t.me/cat_wif_sword" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a><a href="https://app.uniswap.org/#/swap?chain=mainnet&inputCurrency=ETH" target="_blank" rel="noopener">Uniswap</a></div>
-<p class="disc">$SWORDCAT is a meme coin on Ethereum with no intrinsic value or expectation of financial return. It is not an investment, there is no formal team or roadmap, and it is for entertainment only. Crypto is volatile; never spend more than you can afford to lose. Always verify the official contract on Ethereum mainnet.</p><p class="copy">&copy; 2026 cat wif sword. All rights reserved.</p></footer>
+<footer><img src="assets/crest-badge.png" alt=""><p><a href="https://www.catwifsword.fun">catwifsword.fun</a> &middot; <a href="https://x.com/cat_wif_sword" target="_blank" rel="noopener">X</a> &middot; <a href="https://t.me/cat_wif_sword" target="_blank" rel="noopener">Telegram</a> &middot; <a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></p>
+<p class="disc">$SWORDCAT is a meme coin with no intrinsic value or expectation of financial return. It is not affiliated with, endorsed by, or associated with any person, company, project, or brand. Crypto is risky; do your own research and never invest more than you can afford to lose.</p><p class="disc">&copy; 2026 cat wif sword</p></footer>
 <script src="script.js"></script></body></html>
