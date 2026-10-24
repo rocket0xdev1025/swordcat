@@ -1,7 +1,7 @@
 (()=>{const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;const $=s=>document.querySelector(s);
 const b=$('#burger'),m=$('#menu');b.onclick=()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)};m.querySelectorAll('a').forEach(a=>a.onclick=()=>m.classList.remove('open'));
 $('#copy').onclick=async()=>{const t=$('#ca').textContent,l=$('#copy span');try{await navigator.clipboard.writeText(t);l.textContent='Copied'}catch(e){l.textContent='Copy failed'}setTimeout(()=>l.textContent='Copy',1600)};
-const tr=$('#track'),item='<span><svg viewBox="0 0 24 24" width="18" height="18"><use href="#i-sword"/></svg>$SWORDCAT</span><span>SMALL CAT</span><span>BIG SWORD</span><span>BIGGER HEART</span>';tr.innerHTML=item.repeat(8);
+const tr=$('#track'),item='<span><svg viewBox="0 0 24 24" width="18" height="18"><use href="#i-sword"/></svg>$SWORDCAT</span><span>ETHEREUM</span><span>SMALL CAT</span><span>BIG SWORD</span><span>BIGGER HEART</span>';tr.innerHTML=item.repeat(8);
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.25});document.querySelectorAll('.chap').forEach(c=>RM?c.classList.add('in'):io.observe(c));
 const fmt=n=>n.toLocaleString('en-US');const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const el=e.target,to=+el.dataset.to,suf=el.dataset.suf||'';if(RM){el.textContent=fmt(to)+suf;return}const t0=performance.now();const step=t=>{const p=Math.min(1,(t-t0)/1800),v=Math.round(to*(1-Math.pow(1-p,3)));el.textContent=fmt(v)+suf;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.5});document.querySelectorAll('.count').forEach(c=>co.observe(c));
 if(RM)return;
